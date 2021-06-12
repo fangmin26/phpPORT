@@ -31,9 +31,105 @@
   <!-- <div id="scroll">0</div> -->
 
   <!--header-->
-  <?php
-    include '../component/header.php';
-  ?>
+  <div id="ham">
+        <span class="firstbar"></span>
+        <span class="secondbar"></span>
+        <span clas="thirdbar"></span>
+      </div>
+      <!--//ham-->
+      <div id="hamLIST">
+        <ul>
+          <li><a href="../pages/about.html" class="page__click">About</a></li>
+          <li>
+            <a href="../pages/website.html" class="page__click">Website</a>
+          </li>
+          <li><a href="../pages/css.html" class="page__click">Css</a></li>
+          <li>
+            <a href="../pages/javascript.html" class="page__click"
+              >Javascript</a
+            >
+          </li>
+          <li>
+            <a
+              href="http://minji2260.dothome.co.kr/react_port3_php//board/Board.php"
+              class="page__click3"
+              >Board</a
+            >
+          </li>
+          <li>
+            <span
+              ><a
+                href="http://minji2260.dothome.co.kr/react_port3_php//board/Board.php"
+                class="page__click2"
+                >SignIn</a
+              ></span
+            >
+            <span
+              ><a
+                href="http://minji2260.dothome.co.kr/react_port3_php//sign/SignIn.php"
+                class="page__click2"
+                >LogIn</a
+              ></span
+            >
+            <span
+              ><a
+                href="http://minji2260.dothome.co.kr/react_port3_php/pages/contact.html"
+                class="page__click"
+                >Contact</a
+              ></span
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!--//hamLIST-->
+      <header id="header">
+        <nav class="nav">
+          <ul>
+            <li><a href="../pages/about.html">Portfolio</a></li>
+            <li><a href="../pages/about.html" class="page__click">About</a></li>
+            <li>
+              <a href="../pages/website.html" class="page__click">Website</a>
+            </li>
+            <li><a href="../pages/css.html" class="page__click">Css</a></li>
+            <li>
+              <a href="../pages/javascript.html" class="page__click"
+                >Javascript</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://minji2260.dothome.co.kr/react_port3_php//board/Board.php"
+                class="page__click3"
+                >Board</a
+              >
+            </li>
+            <li>
+              <span
+                ><a
+                  href="http://minji2260.dothome.co.kr/react_port3_php//board/Board.php"
+                  class="page__click2"
+                  >SignIn</a
+                ></span
+              >
+              <span
+                ><a
+                  href="http://minji2260.dothome.co.kr/react_port3_php//sign/SignIn.php"
+                  class="page__click2"
+                  >LogIn</a
+                ></span
+              >
+              <span
+                ><a
+                  href="http://minji2260.dothome.co.kr/react_port3_php/pages/contact.html"
+                  class="page__click"
+                  >Contact</a
+                ></span
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
   <!--//header-->
   <main id="contents">
     <section id="section1">

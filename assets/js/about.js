@@ -136,7 +136,7 @@ window.onload = function () {
         trigger: sub,
         toggleClass: "active",
         start: "top 90%",
-        end: "top 10%",
+        end: "top 40%",
         //  markers:true,
         //  scrub:true,
         toggleActions: "play none none none",
@@ -149,9 +149,9 @@ window.onload = function () {
       ScrollTrigger.create({
         trigger: list,
         toggleClass: "active",
-        start: "top 95%",
-        end: "top 50%",
-        //  markers:true,
+        start: "top 90%",
+        end: "top 40%",
+        // markers: true,
         //  scrub:true,
         ease: "Elastic.easeOut.config(1,0.3)",
         delay: 0.3,
@@ -169,7 +169,7 @@ window.onload = function () {
     });
     tl.to(".sec2 .index_box li .desc p", {
       opacity: 1,
-      delay: 1,
+      // delay: 0.2,
       x: 0,
     });
     ScrollTrigger.create({

@@ -1,8 +1,3 @@
-<?php
-  include '../connect/session.php';
-  include '../connect/connect.php';
-?>
-
 <!DOCTYPE html>
 <html lang="ko">
   <head>
@@ -35,14 +30,14 @@
     <!--//favicon-->
     <link rel="shortcut icon" href="../assets/img/favicon_port.ico" />
     <!--style-->
-    <link rel="stylesheet" href="../assets/css/reset.css" />
-    <link rel="stylesheet" href="../assets/css/header.css" />
-    <link rel="stylesheet" href="../assets/css/footer.css" />
-    <link rel="stylesheet" href="../assets/css/about.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/about.css" />
 
     <!--script-->
-    <script defer src="../assets/js/header.js"></script>
-    <script defer src="../assets/js/about.js"></script>
+    <script defer src="./assets/js/header.js"></script>
+    <script defer src="./assets/js/about.js"></script>
   </head>
 
   <body>
@@ -276,9 +271,21 @@
           </div>
         </section>
         <!--//section2-->
-        <?php
-        include '../component/footer.php';
-      ?>
+        <footer id="footer">
+          <div class="container">
+            <div class="footer">
+              <ul class="study">
+                <li><a href="https://maggie-a.tistory.com/">Blog</a></li>
+                <li>
+                  <a href="https://app.gitbook.com/@fangmin226/s/javascript/"
+                    >Gitbook</a
+                  >
+                </li>
+              </ul>
+              <span>ContactOn {01029693106 : Hwang Minji;}</span>
+            </div>
+          </div>
+        </footer>
         <!--//footer-->
       </section>
       <!--//contents-->
@@ -295,7 +302,7 @@
       integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY="
       crossorigin="anonymous"
     ></script>
-    <script src="../assets/hover-effect.umd.js"></script>
+    <script src="./assets/hover-effect.umd.js"></script>
     <script>
       let ani1 = new hoverEffect({
         parent: document.querySelector(".profile1"),

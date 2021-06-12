@@ -1,0 +1,272 @@
+/*ham*/
+#ham {
+  display: none;
+  position: fixed;
+  z-index: 1002;
+  top: 50px;
+  right: 30px;
+  /* background: #ccc; */
+  width: 35px;
+  height: 28px;
+  cursor: pointer;
+}
+#ham span {
+  display: block;
+  background: #000;
+  width: 100%;
+  height: 3px;
+  opacity: 1;
+  margin-top: 7px;
+  transition: all 0.3s ease-in-out;
+}
+#ham span:first-of-type {
+  height: 1.5px;
+  width: 50%;
+}
+
+#ham span:last-of-type {
+  height: 1.5px;
+  width: 50%;
+  position: absolute;
+  right: 0;
+}
+#ham.active span:first-of-type {
+  transform: rotate(45deg) translate(5px, 5px);
+  width: 100%;
+  background: #fff;
+}
+#ham.active span:nth-of-type(2) {
+  opacity: 0;
+}
+#ham.active span:last-of-type {
+  transform: rotate(-45deg) translate(8px, -8px);
+  width: 100%;
+  background: #fff;
+}
+
+#hamLIST {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  /* right: 0; */
+  right: -1000px;
+  top: 0;
+  width: 80%;
+  height: 100%;
+  /* display:flex;
+  justify-content: center;
+  flex-direction: column; */
+  background: #000;
+  transition: all 4s ease;
+}
+#hamLIST.active {
+  right: 0px;
+  width: 100%;
+}
+#hamLIST::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 100%;
+  transition: all 2s ease;
+}
+#hamLIST.active::before {
+  width: 800px;
+  left: -800px;
+}
+
+#hamLIST::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 100%;
+  transition: all 1.5s ease;
+}
+#hamLIST.active::after {
+  width: 400px;
+  left: -400px;
+}
+
+#hamLIST ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#hamLIST ul li:nth-of-type(6) {
+  display: flex;
+  flex-direction: column;
+}
+
+#hamLIST ul li span {
+  text-align: center;
+}
+#hamLIST ul a {
+  position: relative;
+  font-family: "Rajdhani";
+  color: #fff;
+  font-size: 30px;
+}
+
+#hamLIST ul a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 50%;
+  height: 2px;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+}
+#hamLIST ul a:hover::after {
+  width: 100%;
+}
+
+/*header*/
+
+#header {
+  position: fixed;
+  z-index: 1000;
+  top: -200px;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgb(232, 232, 232);
+  backdrop-filter: saturate(180%) blur(5px);
+}
+.nav {
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.nav li {
+  border-right: 1px solid rgb(232, 232, 232);
+  text-align: center;
+  transition: all ease 0.5s;
+}
+
+.nav li a {
+  display: block;
+  font-family: "Rajdhani";
+  font-size: 1.3rem;
+  font-weight: 100;
+  padding: 50px;
+  transition: all 0.3s ease;
+}
+
+.nav li a.shrink {
+  padding: 28px 50px;
+}
+.nav li:nth-of-type(1) a.shrink {
+  padding: 8px 20px;
+}
+.nav li.active a {
+  background: #000;
+  color: #fff;
+  position: relative;
+}
+
+.nav li.active a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.nav li:nth-of-type(1) {
+  flex: 1 1 20%;
+  border: none;
+  /*grow shrink basis,반응형에적합,1일 경우 텍스트포함 점유*/
+}
+
+.nav li:nth-of-type(1) a {
+  font-size: 3.2rem;
+  font-weight: 100;
+  padding: 5px;
+}
+
+.nav li:nth-of-type(2) {
+  flex: 1 1 10%;
+  border-left: 1px solid rgb(232, 232, 232);
+}
+
+.nav li:nth-of-type(3) {
+  flex: 1 1 10%;
+}
+
+.nav li:nth-of-type(4) {
+  flex: 1 1 10%;
+}
+
+.nav li:nth-of-type(5) {
+  flex: 1 1 10%;
+}
+
+.nav li:nth-of-type(6) {
+  flex: 1 1 10%;
+}
+
+.nav li:nth-of-type(7) {
+  flex: 1 1 20%;
+  position: relative;
+  border-right: 0;
+}
+
+.nav li:nth-of-type(7) span {
+  display: inline-block;
+}
+
+.nav li:nth-of-type(7) span a {
+  display: inline-block;
+  font-family: "Rajdhani";
+  font-size: 1rem;
+  font-weight: 100;
+  padding: 10px;
+}
+
+.nav li:nth-of-type(7) .welcome {
+  position: absolute;
+  bottom: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Rajdhani";
+  font-size: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .nav li a {
+    padding: 50px 20px;
+  }
+  .nav li a.shrink {
+    padding: 28px 20px;
+  }
+}
+@media (max-width: 980px) {
+  .nav {
+    display: none;
+  }
+  #ham {
+    display: block;
+  }
+  #hamLIST {
+    display: block;
+  }
+}
